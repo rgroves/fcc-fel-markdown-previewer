@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PreviewWindow from "./PreviewWindow";
+import marked from "marked";
 import "./App.css";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   function updateRawMarkdown(event) {
     const newRawMarkdown = event.target.value;
     setRawMarkdown(newRawMarkdown);
-    setFormattedMarkdown(newRawMarkdown);
+    setFormattedMarkdown(marked(newRawMarkdown));
   }
 
   return (
