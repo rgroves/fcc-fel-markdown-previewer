@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import PreviewWindow from "./PreviewWindow";
 import marked from "marked";
+import DOMPurify from "dompurify";
 import "./App.css";
 
 const defaultRawMarkdown = `Markdown Example
@@ -55,7 +56,10 @@ function App() {
   function updateRawMarkdown(event) {
     const newRawMarkdown = event.target.value;
     setRawMarkdown(newRawMarkdown);
-    setFormattedMarkdown(marked(newRawMarkdown));
+
+    const dirtyHtml = marked(newRawMarkdown);
+    const cleanHtml = DOMPurify.sanitize(dirtyHtml);
+    setFormattedMarkdown(cleanHtml);
   }
 
   return (
