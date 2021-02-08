@@ -38,6 +38,11 @@ Here is an example of **strong text** versus *emphasized text*.
 
 ![Markdown is made for humans](http://source.unsplash.com/2LowviVHZ-E/480x270)`;
 
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+});
+
 function App() {
   const [rawMarkdown, setRawMarkdown] = useState("");
   const [formattedMarkdown, setFormattedMarkdown] = useState("");
