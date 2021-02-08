@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PreviewWindow from "./PreviewWindow";
 import marked from "marked";
 import DOMPurify from "dompurify";
-import "./App.css";
+import Container from "react-bootstrap/Container";
 
 const defaultRawMarkdown = `Markdown Example
 ================
@@ -63,7 +63,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <Container className="text-center">
       <h1>Markdown Previewer</h1>
       <textarea
         id="editor"
@@ -73,7 +73,7 @@ function App() {
         onChange={updateRawMarkdown}
       />
       <PreviewWindow formattedMarkdown={formattedMarkdown} />
-    </div>
+    </Container>
   );
 }
 
