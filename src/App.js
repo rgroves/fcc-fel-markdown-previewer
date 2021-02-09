@@ -80,7 +80,7 @@ function App() {
               onChange={handleMarkdownChange}
             />
           </div>
-          <div className="p-1 p-sm-2 p-md-3 w-50">
+          <div className="p-1 p-sm-2 p-md-3 w-50 flex-grow-1 flex-shrink-1">
             <h2 className="text-success">Markdown Viewer</h2>
             <p>View your formatted Markdown here:</p>
             <PreviewWindow
