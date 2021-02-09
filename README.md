@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Markdown Previewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have built this Markdown Previewer application as part of the [freeCodeCamp Front End Libraries curriculum](https://www.freecodecamp.org/learn/#front-end-libraries).
+
+The [Build a Markdown Previewer](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer) project is one of the final projects required for completing the freeCodeCamp Front End Libraries Certification.
+
+Go ahead and play with the running [Markdown Previewer](https://rgroves.github.io/fcc-fel-markdown-previewer/) application to see what it does.
+
+## Prerequisites
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and it requires [Node.js](https://nodejs.org/en/) to be installed in order to be run locally.
+
+## Installing
+
+Begin by cloning or downloading this project's repository. Inside the project directory where the code resides on your local machine, run the following npm command which will install all of the required dependencies. This only needs to be done once:
+
+### `yarn install`
 
 ## Available Scripts
 
