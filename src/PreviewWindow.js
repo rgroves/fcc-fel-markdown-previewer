@@ -1,7 +1,7 @@
-function PreviewWindow({ formattedMarkdown }) {
+function PreviewWindow({ formattedMarkdown, ...props }) {
   return (
     <div
-      id="preview"
+      {...props}
       dangerouslySetInnerHTML={{ __html: formattedMarkdown }}
     ></div>
   );

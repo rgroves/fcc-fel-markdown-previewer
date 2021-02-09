@@ -82,7 +82,11 @@ function App() {
           <div className="p-1 p-sm-2 p-md-3 w-50">
             <h2 className="text-success">Markdown Viewer</h2>
             <p>View your formatted Markdown here:</p>
-            <PreviewWindow formattedMarkdown={formattedMarkdown} />
+            <PreviewWindow
+              id="preview"
+              className="bg-light border border-success border-inset p-1 p-sm-2 p-md-3"
+              formattedMarkdown={formattedMarkdown}
+            />
           </div>
         </div>
       </main>
