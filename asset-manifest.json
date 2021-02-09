@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fcc-fel-markdown-previewer/static/css/main.718b15af.chunk.css",
+    "main.js": "/fcc-fel-markdown-previewer/static/js/main.0b6355ac.chunk.js",
+    "main.js.map": "/fcc-fel-markdown-previewer/static/js/main.0b6355ac.chunk.js.map",
+    "runtime-main.js": "/fcc-fel-markdown-previewer/static/js/runtime-main.6f79682a.js",
+    "runtime-main.js.map": "/fcc-fel-markdown-previewer/static/js/runtime-main.6f79682a.js.map",
+    "static/css/2.150d169a.chunk.css": "/fcc-fel-markdown-previewer/static/css/2.150d169a.chunk.css",
+    "static/js/2.e2ae9828.chunk.js": "/fcc-fel-markdown-previewer/static/js/2.e2ae9828.chunk.js",
+    "static/js/2.e2ae9828.chunk.js.map": "/fcc-fel-markdown-previewer/static/js/2.e2ae9828.chunk.js.map",
+    "index.html": "/fcc-fel-markdown-previewer/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/fcc-fel-markdown-previewer/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.718b15af.chunk.css.map": "/fcc-fel-markdown-previewer/static/css/main.718b15af.chunk.css.map",
+    "static/js/2.e2ae9828.chunk.js.LICENSE.txt": "/fcc-fel-markdown-previewer/static/js/2.e2ae9828.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f79682a.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.e2ae9828.chunk.js",
+    "static/css/main.718b15af.chunk.css",
+    "static/js/main.0b6355ac.chunk.js"
+  ]
+}
