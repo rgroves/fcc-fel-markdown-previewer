@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import PreviewWindow from "./PreviewWindow";
 import marked from "marked";
 import DOMPurify from "dompurify";
-import Container from "react-bootstrap/Container";
 
 const defaultRawMarkdown = `Markdown Example
 ================
@@ -63,17 +62,31 @@ function App() {
   }
 
   return (
-    <Container className="text-center">
-      <h1>Markdown Previewer</h1>
-      <textarea
-        id="editor"
-        rows="25"
-        cols="80"
-        value={rawMarkdown}
-        onChange={updateRawMarkdown}
-      />
-      <PreviewWindow formattedMarkdown={formattedMarkdown} />
-    </Container>
+    <>
+      <header className="my-1 my-sm-2 my-md-3">
+        <h1 className="text-center">Markdown Previewer</h1>
+      </header>
+      <main>
+        <div className="d-flex flex-wrap justify-content-around">
+          <div className="p-1 p-sm-2 p-md-3 flex-grow-1">
+            <h2 className="text-primary">Markdown Editor</h2>
+            <p>Enter your Markdown here:</p>
+            <textarea
+              className="border border-primary p-1 p-sm-2 p-md-3 w-100"
+              id="editor"
+              rows="25"
+              value={rawMarkdown}
+              onChange={updateRawMarkdown}
+            />
+          </div>
+          <div className="p-1 p-sm-2 p-md-3 w-50">
+            <h2 className="text-success">Markdown Viewer</h2>
+            <p>View your formatted Markdown here:</p>
+            <PreviewWindow formattedMarkdown={formattedMarkdown} />
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
 
