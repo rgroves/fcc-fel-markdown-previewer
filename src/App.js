@@ -47,19 +47,20 @@ function App() {
   const [rawMarkdown, setRawMarkdown] = useState("");
   const [formattedMarkdown, setFormattedMarkdown] = useState("");
 
-  useEffect(() => {
-    setRawMarkdown(defaultRawMarkdown);
-    setFormattedMarkdown(marked(defaultRawMarkdown));
-  }, []);
-
-  function updateRawMarkdown(event) {
-    const newRawMarkdown = event.target.value;
-    setRawMarkdown(newRawMarkdown);
-
-    const dirtyHtml = marked(newRawMarkdown);
+  function updateMarkdown(markdown) {
+    setRawMarkdown(markdown);
+    const dirtyHtml = marked(markdown);
     const cleanHtml = DOMPurify.sanitize(dirtyHtml);
     setFormattedMarkdown(cleanHtml);
   }
+
+  function handleMarkdownChange(event) {
+    updateMarkdown(event.target.value);
+  }
+
+  useEffect(() => {
+    updateMarkdown(defaultRawMarkdown);
+  }, []);
 
   return (
     <>
@@ -76,7 +77,7 @@ function App() {
               id="editor"
               rows="25"
               value={rawMarkdown}
-              onChange={updateRawMarkdown}
+              onChange={handleMarkdownChange}
             />
           </div>
           <div className="p-1 p-sm-2 p-md-3 w-50">
